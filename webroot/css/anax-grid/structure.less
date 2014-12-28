@@ -1,0 +1,146 @@
+/**
+ * Layout of the main page elements 
+ */
+html.blue {
+    background-color : blue;
+}
+html.grey {
+    background-color : #bbb;
+}
+html.green {
+    background-color : #B1C9B1;
+}
+body.blog {
+    color : red;
+}
+body.gallery {
+    color : pink;
+}
+body.new {
+    color : #234623;
+}
+
+#wrapper {
+    max-width : 960px;
+    margin :0 auto;
+    margin-bottom : @magicNumber;
+    margin-top : @magicNumber;
+    background : rgb(255,255,255);
+}
+#wrap-featured,
+#wrap-main,
+#wrap-triptych,
+#wrap-footer-col {
+    .clearfix();
+}
+#header,
+#navbar,
+#flash,
+#footer {
+    .column(@columns);
+}
+#main {
+    .column(@columns / 3 * 2);
+    margin-bottom : @magicNumber;
+}
+ 
+#sidebar {
+    .column(@columns / 3);
+	margin-bottom : @magicNumber;
+}
+ 
+#featured-1,
+#featured-2,
+#featured-3,
+#triptych-1,
+#triptych-2,
+#triptych-3 {
+    .column(@columns / 3);
+	margin-bottom : @magicNumber;
+}
+ 
+#footer-col-1,
+#footer-col-2,
+#footer-col-3, 
+#footer-col-4 {
+    .column(@columns / 4);
+	margin-bottom : @magicNumber;
+}
+
+/**
+ * Layout for header
+ */
+#header {
+	background : rgb(255,255,255);
+	background : -moz-linear-gradient(top,  rgba(255,255,255,1) 22%, rgba(255,40,44,1) 69%, rgba(255,40,44,1) 100%);
+	background : -webkit-gradient(linear, left top, left bottom, color-stop(22%,rgba(255,255,255,1)), color-stop(69%,rgba(255,40,44,1)), color-stop(100%,rgba(255,40,44,1)));
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 22%,rgba(255,40,44,1) 69%,rgba(255,40,44,1) 100%);
+	background : -o-linear-gradient(top,  rgba(255,255,255,1) 22%,rgba(255,40,44,1) 69%,rgba(255,40,44,1) 100%);
+	background : -ms-linear-gradient(top,  rgba(255,255,255,1) 22%,rgba(255,40,44,1) 69%,rgba(255,40,44,1) 100%);
+	background : linear-gradient(to bottom,  rgba(255,255,255,1) 22%,rgba(255,40,44,1) 69%,rgba(255,40,44,1) 100%);
+	position : relative;
+	margin-bottom : 20px;
+	border-style : none;
+	-webkit-border-radius : 10px;
+	-moz-border-radius : 10px;
+	border-radius : 0px 0px 10px 10px;
+	padding-bottom : 10px;
+	box-shadow : 0px 10px 5px rgb(255,133,133); 
+}
+.sitelogo {
+	width : 100px;
+	padding-left : 25px;
+}
+.sitetitle {
+	position : absolute;
+	padding-left : 20px;
+	font-size : 40px;
+	font-variant : small-caps;
+	font-weight : bold;
+}
+.siteslogan {
+	position : absolute;
+	padding-left : 20px;
+	top : 50px;
+	font-style : italic;
+	font-size : 15px;
+}
+
+/**
+ * Layout for footer
+ */
+#footer {
+  margin-top: 40px;
+  border-top: 1px solid rgb(255,133,133);
+  padding-top: 22px;
+}
+
+/**
+ * For articles
+ */
+.article1 {
+  width: 700px;
+  border-right: 1px solid rgb(255,133,133);
+  padding-right: 1em;
+}
+.byline {
+  margin-top: 44px;
+  border-top: 1px dashed rgb(255,133,133);
+  padding-top: 22px;
+}
+.byline p {
+  margin-top: 0;
+}
+.byline img {
+  width : 75px;
+  float : right;
+  border : 1px solid rgb(255,200,200);
+  padding : 4px;  
+  -webkit-border-radius : 10px;
+  -moz-border-radius : 10px;
+  border-radius : 10px;
+  border-color : rgb(255,101,101);
+  -moz-box-shadow : 10px 10px 5px rgb(255,133,133);
+  -webkit-box-shadow : 10px 10px 5px rgb(255,133,133);
+  box-shadow : 5px 5px 5px rgb(255,133,133); 
+}

@@ -1,0 +1,97 @@
+/**
+ * CSS For comment system.
+ *
+ */
+
+ul.post-list {
+    margin : 0;
+    padding : 0;
+}
+
+li.post {
+    padding : 5px 0; 
+    list-style : none;
+    height : 60px;
+}
+
+.post-body {
+    height : 60px;
+    width : 100%;
+    float : left;
+    font-size : 12px;
+}
+
+.avatar {
+    width : 60px;
+    height : 60px;
+    margin-right : 10px;
+    float : left;
+}
+
+.post-header {
+    
+}
+
+.post-name {
+    font-weight : bold;
+}
+
+.post-id {
+
+}
+
+.post-menu {
+
+}
+
+.post-content {
+    min-height : 24px;
+}
+
+.post-footer {
+    color : #999;
+    font-style : italic;
+}
+
+.comment-form {
+    padding-top : 15px;
+}
+
+/**
+ * Style for comment system forms
+ */
+label {
+  font-size : smaller;
+}
+
+input[type=text],
+input[type=password] {
+  font-size : 12px;
+  width : 30%;
+  height : 15px;
+}
+
+input[type=submit],
+input[type=reset] {
+  font-size : 10px;
+}
+
+textarea {
+  font-size : 12px;
+  width : 80%;
+  height : 15px;
+}
+
+.buttons {
+  padding-top : 5px;
+  padding-bottom : 5px;
+} 
+
+fieldset {
+    font-size : 14px;
+    width  : 70%;
+}
+
+label {
+    font-size : 10px;
+} 

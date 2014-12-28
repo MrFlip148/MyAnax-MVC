@@ -1,0 +1,32 @@
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    #featured-1,
+    #featured-2,
+    #triptych-1,
+    #triptych-2 {
+        .column(@columns / 2);
+    }
+    #featured-3,
+    #triptych-3 {
+        display: none;
+    }
+}
+ 
+/* Small devices (tablets, less than 972px) */
+@media (max-width: 971px) {
+    #sidebar {
+        display: none;
+    }
+    #flash,
+    #flash img {
+        width: 100%;
+    }
+}
+ 
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    #flash,
+    #flash img {
+        width: 100%;
+    }
+}  
